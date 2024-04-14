@@ -1,4 +1,4 @@
-<div class="header">
+<!-- <div class="header">
     <h1>Kinopoisk</h1>
     <nav>
         <a routerLink="/home"><div class="c1">Home</div></a>
@@ -10,16 +10,17 @@
         <input type="text" placeholder="Search">
         <button><img src="../../assets/search-icon.png" width="25px"></button>
     </div>
-</div>
+</div> -->
 <div class="homepage">
     <h1>Welcome to Kinopoisk!</h1>
     <p>Discover and explore movies, TV shows, and more.</p>
-    <div class="recommendations">
-        <h2>Reccomendations</h2>
-        <div class="recommendation" *ngFor="let film of recommendedFilms">
-            <img [src]="film.poster" width="200px" alt="Poster">
-            <p>{{ film.title }}</p>
+    <h2>Recommendations</h2>
+    <div class="recommendations" >
+        <a [routerLink]="['/films', film.Title]" *ngFor="let film of recommendedFilms">
+          <div class="recommendation" >
+            <img [src]="film.Poster" width="200px" alt="Poster">
+            <p>{{ film.Title }}</p>
           </div>
-        </div>
+        </a>
         
 </div>

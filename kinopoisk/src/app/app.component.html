@@ -1,1 +1,14 @@
+<div class="header">
+    <h1>Kinopoisk</h1>
+    <nav>
+        <a routerLink="/home"><div class="c1">Home</div></a>
+        <a routerLink="/notdone"><div class="c1">Movies</div></a>
+        <a routerLink="/notdone"><div class="c1">TV Shows</div></a>
+        <a routerLink="/notdone"><div class="c1">People</div></a>
+    </nav>
+    <div class="search">
+        <input type="text" [(ngModel)]="searchText" placeholder="Search">
+        <button (click)="search()"><img src="../../assets/search-icon.png" width="25px"></button>
+    </div>
+</div>
 <router-outlet />

@@ -1,2 +1,24 @@
-<p>filmpage works!</p>
-<a routerLink="/home">Home</a>
+<div class="filmpage">
+    <h2>{{ film?.Title }}</h2>
+    <img [src]="film?.Poster" width="200px" alt="Poster">
+    <p>{{ film?.Plot }}</p>
+    <h2>About</h2>
+    <div class="about"><p>Year: {{ film?.Year }}</p>
+        <p>Genre: {{ film?.Genre }}</p>
+        <p>Director: {{ film?.Director }}</p>
+        <p>Actors: {{ film?.Actors }}</p>
+        <p>IMDB Rating: {{ film?.imdbRating }}</p>
+        <p>IMDB Votes: {{ film?.imdbVotes }}</p>
+        <p>Runtime: {{ film?.Runtime }}</p>
+        <p>Rated: {{ film?.Rated }}</p>
+        <p>Released: {{ film?.Released }}</p>
+        <p>Country: {{ film?.Country }}</p>
+        <p>Language: {{ film?.Language }}</p>
+        <p>Production: {{ film?.Production }}</p>
+        <p>Box Office: {{ film?.BoxOffice }}</p>
+        <p>Awards: {{ film?.Awards }}</p>
+        <p>Metascore: {{ film?.Metascore }}</p>
+        <p>Website: <a href="{{ film?.Website }}">{{ film?.Website }}</a></p></div>
+    
+    
+</div>

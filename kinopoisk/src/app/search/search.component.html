@@ -1,0 +1,14 @@
+<div class="search">
+    <div class="search__results" *ngFor="let movie of foundFilms">
+        <a [routerLink]="['/films', movie.Title]">
+        <div class="search__result" >
+        
+            <img [src]="movie.Poster" alt="{{movie.Title}}" class="search__result-poster">
+            
+            <div class="search__result-title">{{movie.Title}}</div>
+            <div class="search__result-year">{{movie.Year}}</div>
+            <h1>Show more</h1>
+        </div>
+    </a>
+    </div>
+</div>

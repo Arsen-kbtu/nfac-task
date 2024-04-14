@@ -1,0 +1,36 @@
+.search{
+    position: absolute;
+    top: 90px;
+    padding: 40px;
+}
+.search a{
+    color: 161616;
+    text-decoration: none;
+
+}
+.search__result{
+    width: 1200px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    margin-top: 20px;
+    text-decoration: none;
+    color: 161616;
+    border-radius: 20px;
+}
+.search__result img{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+.search__result:hover{
+    cursor: pointer;
+    background-color: 161616;
+    color: white;
+}
+h1{
+    position: relative;
+    left: 500px;
+    top: -350px;
+    color:#f5f5f5;
+}
